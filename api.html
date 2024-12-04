@@ -4,102 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vsc API</title>
-</head>
-<table>
-    <header>
-        <nav>
-            <table>
-                <tr>
-                    <td>
-                        <img src="img/channels4_profile-removebg-preview.png" alt="VSCode" width="40px">
-                    </td>
-                    <td>
-                        Visual Studio Code
-                    </td>                    
-                    <td>
-                        | Docs
-                    </td>
-                    <td>
-                        | Updates
-                    </td>
-                    <td>
-                        | Blog
-                    </td>
-                    <td>
-                        | Api
-                    </td>
-                    <td>
-                        | Extensions
-                    </td>
-                    <td>
-                        | FAQ
-                    </td>
-                    <td>
-                        | Github Copilot
-                    </td>
-                </tr>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/channels4_profile-removebg-preview.png" alt="VSCode" width="40px">
+                        </td>
+                        <td>
+                            Visual Studio Code
+                        </td>                    
+                        <td>
+                            | Docs
+                        </td>
+                        <td>
+                            | Updates
+                        </td>
+                        <td>
+                            | Blog
+                        </td>
+                        <td>
+                            | Api
+                        </td>
+                        <td>
+                            | Extensions
+                        </td>
+                        <td>
+                            | FAQ
+                        </td>
+                        <td>
+                            | Github Copilot
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+        <table>
+            <tr>
+                <td>
+                        <h2 >Overview</h2>
+                        <p>GET STARTED</p>
+                        <p>EXTENSION CAPABILITIES</p>
+                        <p>EXTENSION GUIDES</p>
+                        <p>UX GUIDELINES</p>
+                        <p>LANGUAGE EXTENSIONS</p>
+                        <p>TESTING AND PUBLISHING</p>
+                        <p>ADVANCED TOPICS</p>
+                        <p>REFERENCES</p>
+                </td>
+                <td>
+                    <main>
+                        <h1>Extension Api</h1>
+                        <p>Visual Studio Code is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as extensions and use the same Extension API.</p>
+                        <p>This document describes:</p>
+                        <ul>
+                            <li>How to build, run, debug, test, and publish an extension</li>
+                            <li>How to take advantage of VS Code's rich Extension API</li>
+                            <li>Where to find guides and code samples to help get you started</li>
+                            <li>Following our UX guidelines for best practices</li>
+                        </ul>
+                        <p>Code samples are available at Microsoft/vscode-extension-samples.</p>
+                        <p>If you are looking for published extensions, head to the VS Code Extension Marketplace.</p>
+                        <h2>What can extensions do?</h2>
+                        <p>Here are some examples of what you can achieve with the Extension API:</p>
+                        <ul>
+                            <li>Change the look of VS Code with a color or file icon theme - Theming </li>
+                            <li>Add custom components & views in the UI - Extending the Workbench</li>
+                            <li>Create a Webview to display a custom webpage built with HTML/CSS/JS - Webview Guide</li>
+                            <li>Support a new programming language - Language Extensions Overview</li>
+                            <li>Support debugging a specific runtime - Debugger Extension Guide</li>
+                        </ul>  
+                        <p>If you'd like to have a more comprehensive overview of the Extension API, refer to the Extension Capabilities Overview page. Extension Guides Overview also includes a list of code samples and guides that illustrate various Extension API usage.</p>
+                        <p>Building a good extension can take a lot of time and effort. Here is what each section of the API docs can help you with:</p>
+                        <ul>
+                            <li>Get Started teaches fundamental concepts for building extensions with the Hello World sample.</li>
+                            <li>Extension Capabilities dissects VS Code's vast API into smaller categories and points you to more detailed topics.</li>
+                            <li>Extension Guides includes guides and code samples that explain specific usages of VS Code Extension API.</li>
+                            <li>UX Guidelines showcases best practices for providing a great user experience in an extension.</li>
+                            <li>Language Extensions illustrates how to add support for a programming language with guides and code samples.</li>
+                            <li>Testing and Publishing includes in-depth guides on various extension development topics, such as testing and publishing extensions.</li>
+                            <li>Advanced Topics explains advanced concepts such as Extension Host, Supporting Remote Development and GitHub Codespaces, and Proposed API.</li>
+                            <li>References contains exhaustive references for the VS Code API, Contribution Points, and many other topics.</li>
+                        </ul>
+                        <h2>What's new?</h2>
+                        <p>VS Code updates on a monthly cadence, and that applies to the Extension API as well. New features and APIs become available every month to increase the power and scope of VS Code extensions.</p>
+                        <p>To stay current with the Extension API, you can review the monthly release notes, which have dedicated sections covering:</p>
+                        <ol>
+                            <li>Extension authoring - Learn what new extension APIs are available in the latest release.</li>
+                            <li>Proposed extension APIs - Review and give feedback on upcoming proposed APIs.</li>
+                        </ol>
+                        <h2>Looking for help</h2>
+                        <p>If you have questions for extension development, try asking on:</p>
+                        <ol>
+                            <li>VS Code Discussions: GitHub community to discuss VS Code's extension platform, ask questions, help other members of the community, and get answers.</li>
+                            <li>Stack Overflow: There are thousands of questions tagged vscode-extensions, and over half of them already have answers. Search for your issue, ask questions, or help your fellow developers by answering VS Code extension development questions!</li>
+                            <li>VS Code Dev Slack: Public chatroom for extension developers. VS Code team members often join in the conversations.</li>
+                        </ol>
+                        <p>To provide feedback on the documentation, create new issues at Microsoft/vscode-docs. If you have extension questions that you cannot find an answer for, or issues with the VS Code Extension API, please open new issues at Microsoft/vscode.</p>
+                    </main>
+                </td>
+                <td colspan="3">
+                    <aside>
+                        <h2>IN THIS ARTICLE</h2>
+                        <p>What can extensions do?</p>
+                        <p>How to build extensions?</p>
+                        <p>What's new?</p>
+                        <p>Looking for help</p>
+                        <p>RSSSubscribe</p>
+                        <p>StackoverflowAsk questions</p>
+                        <p>TwitterFollow @code</p>
+                        <p>GitHubRequest features</p>
+                        <p>IssuesReport issues</p>
+                        <p>YouTubeWatch videos</p>
+                    </aside>
+                </td>
+            </tr>
             </table>
-        </nav>
-    </header>
-    <main>
-        <h1>Extension Api</h1>
-        <p>Visual Studio Code is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as extensions and use the same Extension API.</p>
-        <p>This document describes:</p>
-        <ul>
-            <li>How to build, run, debug, test, and publish an extension</li>
-            <li>How to take advantage of VS Code's rich Extension API</li>
-            <li>Where to find guides and code samples to help get you started</li>
-            <li>Following our UX guidelines for best practices</li>
-        </ul>
-        <p>Code samples are available at Microsoft/vscode-extension-samples.</p>
-        <p>If you are looking for published extensions, head to the VS Code Extension Marketplace.</p>
-        <h2>What can extensions do?</h2>
-        <p>Here are some examples of what you can achieve with the Extension API:</p>
-        <ul>
-            <li>Change the look of VS Code with a color or file icon theme - Theming </li>
-            <li>Add custom components & views in the UI - Extending the Workbench</li>
-            <li>Create a Webview to display a custom webpage built with HTML/CSS/JS - Webview Guide</li>
-            <li>Support a new programming language - Language Extensions Overview</li>
-            <li>Support debugging a specific runtime - Debugger Extension Guide</li>
-        </ul>  
-        <p>If you'd like to have a more comprehensive overview of the Extension API, refer to the Extension Capabilities Overview page. Extension Guides Overview also includes a list of code samples and guides that illustrate various Extension API usage.</p>
-        <p>Building a good extension can take a lot of time and effort. Here is what each section of the API docs can help you with:</p>
-        <ul>
-            <li>Get Started teaches fundamental concepts for building extensions with the Hello World sample.</li>
-            <li>Extension Capabilities dissects VS Code's vast API into smaller categories and points you to more detailed topics.</li>
-            <li>Extension Guides includes guides and code samples that explain specific usages of VS Code Extension API.</li>
-            <li>UX Guidelines showcases best practices for providing a great user experience in an extension.</li>
-            <li>Language Extensions illustrates how to add support for a programming language with guides and code samples.</li>
-            <li>Testing and Publishing includes in-depth guides on various extension development topics, such as testing and publishing extensions.</li>
-            <li>Advanced Topics explains advanced concepts such as Extension Host, Supporting Remote Development and GitHub Codespaces, and Proposed API.</li>
-            <li>References contains exhaustive references for the VS Code API, Contribution Points, and many other topics.</li>
-        </ul>
-        <h2>What's new?</h2>
-        <p>VS Code updates on a monthly cadence, and that applies to the Extension API as well. New features and APIs become available every month to increase the power and scope of VS Code extensions.</p>
-        <p>To stay current with the Extension API, you can review the monthly release notes, which have dedicated sections covering:</p>
-        <ol>
-            <li>Extension authoring - Learn what new extension APIs are available in the latest release.</li>
-            <li>Proposed extension APIs - Review and give feedback on upcoming proposed APIs.</li>
-        </ol>
-        <h2>Looking for help</h2>
-        <p>If you have questions for extension development, try asking on:</p>
-        <ol>
-            <li>VS Code Discussions: GitHub community to discuss VS Code's extension platform, ask questions, help other members of the community, and get answers.</li>
-            <li>Stack Overflow: There are thousands of questions tagged vscode-extensions, and over half of them already have answers. Search for your issue, ask questions, or help your fellow developers by answering VS Code extension development questions!</li>
-            <li>VS Code Dev Slack: Public chatroom for extension developers. VS Code team members often join in the conversations.</li>
-        </ol>
-        <p>To provide feedback on the documentation, create new issues at Microsoft/vscode-docs. If you have extension questions that you cannot find an answer for, or issues with the VS Code Extension API, please open new issues at Microsoft/vscode.</p>
-    </main>
-    <label for="Help">Was this documentation helpful?</label>
-    <table>
-        <tr>
-            <td>Yes</td>
-            <td>No</td>
-        </tr>
-        <tr>
-        <td><input type="radio" name="Help" id="yes" value="yes"></td>
-        <td><input type="radio" name="Help" id="no" value="no"></td>
-        </tr>
-    </table>
-</body>
+        <center>
+            <label for="Help">Was this documentation helpful?</label>
+            <table>
+                    <tr>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                    <td><input type="radio" name="Help" id="yes" value="yes"></td>
+                    <td><input type="radio" name="Help" id="no" value="no"></td>
+                    </tr>
+            </table>
+        </center>
+    </body>
 </html>
